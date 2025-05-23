@@ -1,0 +1,237 @@
+/* reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: filter 0.3s ease;
+  direction: rtl;
+}
+
+.dark-mode {
+  filter: brightness(0.7);
+}
+
+/* زر تبديل الوضع */
+.mode-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.mode-toggle:hover {
+  color: #ddd;
+}
+
+/* صندوق تسجيل الدخول */
+.login-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* عنوان */
+.login-box h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* التسميات */
+.login-box label {
+  display: block;
+  text-align: right;
+  margin: 0.5rem 0 0.2rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* حقول الإدخال */
+.login-box input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 5px #28a745aa;
+}
+
+/* زر تسجيل الدخول */
+.login-box button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #218838;
+}
+
+/* تذكرني ونسيت كلمة المرور */
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.remember-forgot label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.remember-forgot input[type="checkbox"] {
+  margin-left: 0.4rem;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.remember-forgot a {
+  text-decoration: none;
+  color: #28a745;
+  transition: color 0.3s ease;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+  color: #1e7e34;
+}
+
+/* روابط إضافية */
+.options a {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.options a:hover {
+  color: #28a745;
+  text-decoration: underline;
+}
+
+/* أيقونات التواصل الاجتماعي */
+.background-social-icons {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.background-social-icons a {
+  margin: 0 10px;
+  font-size: 1.4rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.background-social-icons a:hover {
+  background-color: #333;
+  
+}
+.register {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.register h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.register input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.register input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bffaa;
+}
+
+.register button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.register button:hover {
+  background-color: #0056b3;
+}
+
+.register .links a {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register .links a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* الفوتر */
+footer.footer {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255);
+  font-size: 0.89rem;
+  font-weight: 500;
+}

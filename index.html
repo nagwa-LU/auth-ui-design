@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسجيل الدخول</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .dark-mode {
+      filter: brightness(0.7);
+    }
+
+    .mode-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 15px;
+      width: 300px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .login-box h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    .login-box label {
+      display: block;
+      text-align: right;
+      margin: 0.5rem 0 0.2rem;
+      font-size: 0.9rem;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .login-box button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 0.6rem;
+      border-radius: 8px;
+      width: 100%;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+
+    .login-box .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .login-box .options a {
+      display: block;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .background-social-icons {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+
+    .background-social-icons a {
+      margin: 0 10px;
+      font-size: 1.4rem;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 8px;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .background-social-icons a:hover {
+      background-color: #333;
+    }
+
+    footer.footer {
+      margin-top: 1rem;
+      color: white;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- زر الوضع الداكن -->
+  <button id="toggle-theme" class="mode-toggle" aria-label="تبديل الوضع">
+    <span id="theme-icon">☀</span>
+  </button>
+
+  <!-- مربع تسجيل الدخول -->
+  <div class="login-box">
+    <h2>تسجيل الدخول</h2>
+    <form id="login-form">
+      <label for="email">البريد الإلكتروني</label>
+      <input type="email" id="email" placeholder="example@email.com" required />
+
+      <label for="password">كلمة المرور</label>
+      <input type="password" id="password" placeholder="••••••••" required />
+
+      <div class="remember-forgot">
+        <label>
+          <input type="checkbox" />
+          تذكرني
+        </label>
+        <a href="forgot-password.html">نسيت كلمة المرور؟</a>
+      </div>
+
+      <button type="submit">تسجيل الدخول</button>
+
+      <div class="options">
+        <a href="register.html">ليس لديك حساب؟ أنشئ واحداً</a>
+      </div>
+    </form>
+
+    <div class="background-social-icons">
+      <a href="mailto:nagwa33ghanem@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/nagwa-ghanem-720b9b356" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/nagwa-LU" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+    <footer class="footer">
+      <p>© 2025 |UI Login</p>
+    </footer>
+  </div>
+
+  <!-- سكربت الوضع الداكن -->
+  <script>
+    const toggleBtn = document.getElementById('toggle-theme');
+    const icon = document.getElementById('theme-icon');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      icon.textContent = body.classList.contains('dark-mode') ? '☀' : '☀';
+    });
+  </script>
+  <footer class="footer">
+    <p style="color:rgb(15, 11, 11);">2025© |UI Login</p>
+  </footer>
+
+</body>
+</html>
