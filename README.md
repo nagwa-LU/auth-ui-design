@@ -31,26 +31,19 @@ This project is created to **practice front-end development skills** and demonst
 ## 📸 Screenshots
 
 ### 🔹 Login Page
+### 🔹 Login Page (Dark Mode)
+![Login Dark](login-dark.png.png)
 
-![Login Page](screenshots/login-light.png.png)
-'''
-![Login Page](screenshots/login-dark.png.png) 
-
-
----
+### 🔹 Login Page (Light Mode)
+![Login Light](login-light.png.png)
 
 ### 🔹 Register Page
-
-![Register Page](screenshots/create-account.png.png)
-
----
+![Register](create-account.png)
 
 ### 🔹 Forgot Password Page
-
-![Forgot Password Page](screenshots/reset-password.png.png)
+![Forgot Password](reset-password.png)
 
 ---
-
 
 ## 🛠️ Technologies Used
 
