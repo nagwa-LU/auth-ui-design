@@ -32,27 +32,25 @@ This project is created to **practice front-end development skills** and demonst
 
 ### 🔹 Login Page
 
-![Login Page](screenshots/login.png)
+![Login Page](screenshots/login-light.png.png)
+'''
+![Login Page](screenshots/login-dark.png.png) 
+
 
 ---
 
 ### 🔹 Register Page
 
-![Register Page](screenshots/register.png)
+![Register Page](screenshots/create-account.png.png)
 
 ---
 
 ### 🔹 Forgot Password Page
 
-![Forgot Password Page](screenshots/forgot-password.png)
+![Forgot Password Page](screenshots/reset-password.png.png)
 
 ---
 
-### 🔹 Mobile View (Responsive Design)
-
-![Mobile View](screenshots/mobile.png)
-
----
 
 ## 🛠️ Technologies Used
 
