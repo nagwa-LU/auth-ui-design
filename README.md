@@ -38,10 +38,10 @@ This project is created to **practice front-end development skills** and demonst
 ![Login Light](login-light.png.png)
 
 ### 🔹 Register Page
-![Register](create-account.png)
+![Register](create-account.png.png)
 
 ### 🔹 Forgot Password Page
-![Forgot Password](reset-password.png)
+![Forgot Password](reset-password.png.png)
 
 ---
 
