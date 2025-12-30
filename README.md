@@ -45,12 +45,14 @@ This project is created to **practice front-end development skills** and demonst
 
 ---
 
-## Live Demo :
-https://nagwa-lu.github.io/auth-ui-design/
-
 ## 🛠️ Technologies Used
 
 - HTML5  
 - CSS3  
-- Responsive Design Techniques  
+- Responsive Design Techniques
+  
+---
+
+## Live Demo :
+https://nagwa-lu.github.io/auth-ui-design/
 
