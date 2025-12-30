@@ -45,6 +45,9 @@ This project is created to **practice front-end development skills** and demonst
 
 ---
 
+## Live Demo :
+https://nagwa-lu.github.io/auth-ui-design/
+
 ## 🛠️ Technologies Used
 
 - HTML5  
